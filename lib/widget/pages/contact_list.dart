@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_responsive_ui/consts/app_colors.dart';
 import 'package:whatsapp_responsive_ui/model/info.dart';
+import 'package:whatsapp_responsive_ui/screens/mobile_chat_screen.dart';
 import 'package:whatsapp_responsive_ui/widget/reusable_text1.dart';
 
 class ContactList extends StatelessWidget {
@@ -19,7 +20,7 @@ class ContactList extends StatelessWidget {
                   children: [
                     InkWell(
                       onTap: (){
-
+                    Navigator.push(context, MaterialPageRoute(builder: (_)=>const MobileChatScreen()));
                       },
                       child: Padding(
                         padding: const EdgeInsets.only(bottom:8.0),
